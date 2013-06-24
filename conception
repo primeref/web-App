@@ -1,0 +1,46 @@
+
+ 
+                                                          Application Web chat
+
+       
+
+
+
+      Desciption de l'application de chat .
+
+    L'application de chat est une application qui a pour role de faire communiquer les utilisateurs          qui  accede au site .Elle met en contacte directe 2 personne pour pouvoire faire une discusion et aussi pour transfere des fichiers entre eux.
+
+ Les  etapes sont :
+–  Saisir un pseudonom.
+–	Saisir des messages Textuelles.
+–	Transferer des fichiers.
+–	Deconnexion.
+
+
+      La conception .
+
+  Index.html c'est la premiere page qui contient un formulaire qui demande a l'utilisateur de faire saisire son nom. Apres avoir inserer le nom et clicker le button 'submit' , la valeur inserer dans le texte box sera envoyer a la servelet et cela en utilisant la methode “POST” du formulaire  .
+ 
+ Du cote servlet , un traitement de la requete aura lieu ,et cela pour mener l'utilisateur a la page de Chat qui est une page HTML dont tous le discours sera afficher .
+
+  Gestion des Messages.
+
+ Dans la page de gestion de messages ,une variable de type ArrayList<Message> doit etre utiliser.
+Cette variable aura pour role de sauvgarder les messages en Queue et cela pour pouvoir faire l'ajout (Display new Message)  des nouvelles messages en cas ou un nouveau message est inserer.
+
+   à la réception d'une requête POST, la page récupère le texte du message dans le paramètre de la requête , ainsi que le nom de son auteur dans l'attribut de session stocké . Elle crée alors un nouveau message, qu'elle place en queue de l'Arrayliste.
+
+A  la réception d'une requête (GET ou POST), la page parcourt la liste et affiche tous les messages avec la mise en forme qui vous plaîra. En l'absence d'envoi de données de la part du client, cet affichage s'actualisera toutes les 5 secondes.
+
+
+
+
+
+
+    Outils pour l'application .
+
+ Html5 : Pour creer les formes et les pages statiques.
+JavaBean : Créer une classe de gestion des messages qui encapsulera l'ArrayList<Message> et fournira les accesseurs standard nécessaires à l'ajout et à la récupération d'un message.
+
+Jsp :pour la recuperation et l'affichage des messages avec Utilisation du JavaBean .
+
