@@ -1,4 +1,3 @@
-
  
                                                           Application Web chat
 
@@ -40,7 +39,7 @@ A  la réception d'une requête (GET ou POST), la page parcourt la liste et affi
     Outils pour l'application .
 
  Html5 : Pour creer les formes et les pages statiques.
-JavaBean : Créer une classe de gestion des messages qui encapsulera l'ArrayList<Message> et fournira les accesseurs standard nécessaires à l'ajout et à la récupération d'un message.
+JavaBean : Créer une classe de gestion des messages qui contient l'ArrayList<Message> et fournira les accesseurs(Getter setter) standard nécessaires à l'ajout et à la récupération d'un message.
 
 Jsp :pour la recuperation et l'affichage des messages avec Utilisation du JavaBean .
 
